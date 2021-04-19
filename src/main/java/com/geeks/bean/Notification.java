@@ -9,7 +9,7 @@ import java.util.UUID;
 @Component
 public abstract class Notification {
     @Autowired
-    @Qualifier(value = "customer")
+    @Qualifier(value = "user")
     public Customer customer;
 
 

@@ -12,11 +12,6 @@ public class Main {
     public static void main(String[] args) {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(BeanConfigurations.class);
 
-        Customer customer = (Customer) applicationContext.getBean("customer");
-        customer.email = "rizkiaprilan@gmail.com";
-        customer.name = "rizki aprilan";
-        customer.phoneNumber = "2398472939";
-
         Store mantoko = (Store) applicationContext.getBean("store");
         mantoko.transaction(2);
         mantoko.transaction(4);
