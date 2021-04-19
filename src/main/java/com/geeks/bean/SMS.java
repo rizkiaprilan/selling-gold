@@ -1,9 +1,9 @@
 package com.geeks.bean;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class SMS extends Notification{
-    public SMS(Customer customer) {
-        super(customer);
-    }
 
     @Override
     public String  bodyMessage(int gold) {

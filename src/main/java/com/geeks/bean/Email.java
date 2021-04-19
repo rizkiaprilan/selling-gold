@@ -1,9 +1,9 @@
 package com.geeks.bean;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Email extends Notification {
-    public Email(Customer customer) {
-        super(customer);
-    }
 
     @Override
     public String bodyMessage(int gold) {
